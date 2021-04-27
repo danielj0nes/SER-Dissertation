@@ -1,8 +1,7 @@
 Test/
 Train/
-.ipynb_checkpoints
-.train_dataset.npy
-.test_dataset.npy
 me_tests/
 test_dataset.npy
 train_dataset.npy
+.ipynb_checkpoints
+__pycache__
