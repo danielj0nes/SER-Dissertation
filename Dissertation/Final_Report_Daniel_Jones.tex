@@ -6,6 +6,7 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage{tabto}
+\usepackage{tabularx}
 \pagestyle{fancy}
 \setcounter{tocdepth}{4}
 \setcounter{secnumdepth}{4}
@@ -38,13 +39,15 @@
 	\\
 	\vspace{3cm}
 	\large Submitted to the School of Computing, Engineering and Mathematics Coventry University
+	\\
+	April 2021
 \end{center}
 \newpage
 \tableofcontents
 \newpage
 \section{Abstract}
 
-Classifying human emotion from speech is a challenging problem that has the potential to benefit various fields in different ways. One such field is in learning environments, where the application of such technology could aid in matters such as performance review / analysis or in helping children with special needs, such as autism. In this project, a speech emotion classification model has been built and trained on the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS), and then deployed in the form of a graphical tool that analyses either pre-recorded audio or a live audio input and outputs the weighted predictions. The model has been developed using a 2-Dimensional Convolutional Neural Network (CNN) approach, where the training data is in the form of audio files converted into Mel Spectrograms. Through this approach, an exact prediction accuracy of 68.8\% (and binary positive / negative accuracy of 94\%) has been achieved on an unseen test dataset, with further personalised tests yielding promising results.
+Classifying human emotion from speech is a challenging problem that has the potential to benefit various fields in different ways. One such field is in learning environments, where the application of such technology could aid in matters such as performance review / analysis or in helping children with special needs, such as autism. In this project, a speech emotion classification model has been built and trained on the Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS), and then deployed in the form of a graphical tool that analyses either pre-recorded audio or a live audio input and outputs the weighted predictions. The model has been developed using a 2-Dimensional Convolutional Neural Network (CNN) approach, where the training data is in the form of audio files converted into Mel Spectrograms. Through this approach, an exact prediction accuracy of 68.8\% has been achieved on an unseen test dataset, with further personalised tests yielding promising results.
 
 \section{Acknowledgements}
 
@@ -74,7 +77,7 @@ It can be observed that technology has yet to make a significant contribution to
 \\
 \includegraphics[width=14cm]{figure_1_spectrogram_comparison}
 
-\noindent Figure 1: Spectrogram comparison
+\noindent Figure 1 - spectrogram comparison.
 \vspace{0.05cm}
 
 \noindent Even from a macro perspective, it is possible to make out some visible similarities. Take for example the large circular shapes that can be made out from the two angry clips, or the distribution of the yellow (corresponding to pitch across the mel scale) lines in the sad clips. The spectrogram is represented by a matrix of values, which is where the vast, more subtle patterns can be identified and observed - making it an ideal candidate for a CNN approach.
@@ -84,10 +87,10 @@ It can be observed that technology has yet to make a significant contribution to
 \noindent Prior to the increased popularity of machine learning, conventional methods for analysing and processing speech involved the usage of Gaussian Mixture Models (GMM) and Hidden Markov Models (HMM), both of which produced results that were simply too inaccurate to ever put into production (Sainath et al., 2013; Venkataramanan \& Rajamohan, 2019). The accessibility of machine learning techniques has lead to novel approaches such as the application of Recurrent Neural Networks (RNN) and CNNs, resulting in improved accuracy and introducing completely different approaches to the problem.
 \\
 
-\noindent In this paper, inspired by the notable success and improvements seen from the application of CNNs in particular, a relatively accurate classification model has been trained through applying CNNs to Mel Spectrogram representations of audio files. The Mel Spectrogram effectively allows us to transform the classification problem from the audio domain into the visual domain, where CNNs excel. As previously shown in figure 1, there are many subtle patterns to be found in the data, but it is a difficult task to manually calculate and label these ourselves. Hence a deep learning approach, where the model learns to recognise and extract features itself, becomes a clear suitable choice.
+\noindent In this paper, inspired by the notable success and improvements seen from the application of CNNs in particular, a relatively accurate classification model has been trained through applying CNNs to Mel Spectrogram representations of audio files. The Mel Spectrogram effectively allows us to transform the classification problem from the audio domain into the visual domain, where CNNs have demonstrated to excel. As previously shown in figure 1, there are many subtle patterns to be found in the data, but it is a difficult task to manually calculate and label these ourselves. Hence a deep learning approach, where the model learns to recognise and extract features itself, becomes a clear suitable choice.
 \\
 
-\noindent The final trained model has then been deployed into a general purpose graphical tool that can perform predictions across pre-recorded audio files or through recording on the fly. The graphical tool has been purposefully designed with simplicity in mind, with the intention of being easy to use and incorporate into learning environments.
+\noindent The final trained model has then been deployed into a general purpose graphical tool that can perform predictions across pre-recorded audio files or through recording on the fly. The graphical tool has been purposefully designed with simplicity in mind and with the intention of being easy to use and incorporate into learning environments.
 
 \section{Literature Review}
 
@@ -95,7 +98,7 @@ It can be observed that technology has yet to make a significant contribution to
 Automatic Speech Emotion Recognition Using Machine Learning takes a comparative look at SER systems. The underlying method to extract and process the speech signals (using Mel-frequency cepstrum coefficients and modulation spectral features in conjunction with feature selection) remains the same whilst the machine learning paradigms differ. The paper first looks at a recurrent neural network approach and goes on to compare it against both multivariate linear regression and support vector machine approaches. The paper makes the claim that such approaches were selected due to their existing popularity in the field. 
 \\
 
-\noindent The initial criticism of the paper is that it fails to consider the convolutional neural network (CNN) approach, despite its notable popularity and differences to the other methods. However, the paper is still concise and informative enough to warrant a full review. One positive quality that immediately stands out is how clear the information is presented, both in terms of looks and in use of language. An additional outstanding quality of this paper is the lack of pre-requisite knowledge required of the reader; many similar such papers assume at least a fundamental understanding and generally a lot more, whilst this paper describes most of the necessary knowledge required to grasp the content.
+\noindent The initial criticism of the paper is that it fails to consider the CNN approach, despite its notable popularity and differences to the other methods. However, the paper is still concise and informative enough to warrant a full review. One positive quality that immediately stands out is how clear the information is presented, both in terms of looks and in use of language. An additional outstanding quality of this paper is the lack of pre-requisite knowledge required of the reader; many similar such papers assume at least a fundamental understanding and generally a lot more, whilst this paper describes most of the necessary knowledge required to grasp the content.
 \\
 
 \noindent The paper starts by explaining the importance behind SER technology, the main argument can be reduced to how effective and convenient it is to obtain information pertaining to the emotional state of an individual in comparison to other methods (such as facial expressions and physiological signals). This argument can be applied to the idea of using such technology in learning environments based on the documented effectiveness of the results in similar scenarios. The paper even uses learning environments as an example of a potential application of such technology; Kerkeni et al. (2019) state that ``a teacher can use SER to decide what subjects can be taught and must be able to develop strategies for managing emotions within the learning environment''.
@@ -127,23 +130,143 @@ Whilst this paper largely covers an area unrelated to the project, the points re
 \section{Method}
 The development of this project can be broken down into 5 key stages: dataset selection and comprehension, data processing, model architecture and training, testing, and finally, GUI development.
 \subsection{Foreword}
-A lot of the time spent on this project was spent prior to the key stages on personal development; this involved developing a theoretical and practical understanding of machine learning techniques in Python. In particular, the LinkedIn Learning courses ``PyTorch Essential Training: Deep Learning'' by Jonathan Fernandes and ``Building and Deploying Deep Learning Applications with TensorFlow'' by Adam Geitgey both played a large role in understanding how the technology worked at both the practical and theoretical levels. Once a core understanding was developed, consistent literature review of technical papers on speech emotion recognition helped to further shape the understanding towards the specific subject matter.
+A lot of the time spent on this project was spent prior to the key stages on personal development; this involved developing a theoretical and practical understanding of machine learning techniques. In particular, the LinkedIn Learning courses ``PyTorch Essential Training: Deep Learning'' by Jonathan Fernandes and ``Building and Deploying Deep Learning Applications with TensorFlow'' by Adam Geitgey both played a large role in understanding how the technology worked at both the practical and theoretical levels. Once a core understanding was developed, consistent literature review of technical papers on speech emotion recognition helped to further shape the understanding towards the specific subject matter. The entire project was built using Python with various Python libraries; in particular TensorFlow, Keras, and Librosa. TensorFlow and Keras were used for the machine learning aspects of the project and Librosa in audio processing.
 \subsection{Dataset Selection and Comprehension}
-Prior to embarking on any practical work for this project, consideration was made to the type of data that would be required to use for both testing and training the speech emotion classifier. One initial idea was to collect and sample our own data, but the ongoing global pandemic made this option infeasible. In general, the choices for such a dataset were highly limited, with only one option standing out in particular; The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). RAVDESS is an open-source dataset (obtained through Kaggle at \href{https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio}{https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio}), consisting of 1440 unique audio clips of actors speaking a sentence whilst blatantly conveying one emotion out of: calm, happy, sad, angry, fearful, surprise, and disgust.
+Prior to embarking on any practical work for this project, consideration was made to the type of data that would be required to use for both testing and training the speech emotion classifier. One initial idea was to collect and sample our own data, but the ongoing global pandemic made this option infeasible. In general, the choices for such a dataset were highly limited, with only one option standing out in particular; The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). RAVDESS is an open-source dataset (Kaggle, 2019) consisting of 1440 unique audio clips of actors speaking a sentence whilst blatantly conveying one emotion out of: calm, happy, sad, angry, fearful, surprise, and disgust.
 \\
 
-\noindent The selection of the RAVDESS dataset for this project meant that the emotions in scope were pre-determined, which, whilst not inherently detrimental, meant that prior work related to selecting the emotions best suited to the field of learning environments became redundant. Fortunately however, the more general emotions that had been selected prior were covered by the dataset with later developments showing that inferences about the more complicated in-scope emotions could be derived from the broad parent classes, as well as through studying the multi-class weighted predictions.
+\noindent The selection of the RAVDESS dataset for this project meant that the emotions in scope were pre-determined, which, whilst not inherently detrimental, meant that prior work related to selecting the emotions best suited to the field of learning environments became redundant. Fortunately however, the more general emotions that had been selected prior were covered by the dataset with later developments showing that inferences about the more complicated in-scope emotions could be attained from the broad parent classes, as well as through studying the multi-class weighted predictions.
 \newpage
 \noindent The dataset is already labelled such that the labels effectively describe the key content of the audio clip, as shown below in figure 2.
 \\
 
 \includegraphics{figure_2_dataset_audio_example}
-Figure 2 - only the sections marked in green (emotion and gender) need to be considered.
+Figure 2 - an example audio file from the dataset; only the sections marked in green (emotion and gender) need to be taken into consideration.
 \\
 
 
 \noindent Since the dataset comes labelled and is well structured, the only administrative task was to extract the key labels from each of the audio files; this was achieved through the\code{get\_label\_RAVDESS} helper function (code in the Appendix). At first glance, the emotional intensity label may seem like a factor to consider, however, due to the limitations in terms of the size of the dataset, creating additional categories would only serve to make the classification more ambiguous.
 \\
+
+\noindent With regards to categorisation, this was initially set to include all of the default labelled emotions in the dataset, but later work revealed that this yielded worse results. The likely explanation for this is that the distribution of emotions throughout the dataset is uneven, meaning that not enough data can be studied to build viable connections. Upon further studying the minority emotions (calm and surprise), it was found that these could feasibly be converted in efforts to improve the neutral and happy emotion categorisation respectively. 
+\\
+\begin{center}
+\begin{tabularx}{\textwidth}{ |X|X| }
+\hline 
+  \textbf{Original Label}  & \textbf{Converted Label} \\
+  \hline
+  Neutral & Neutral \\
+  \hline
+  Calm & \textbf{Neutral} \\
+  \hline
+  Happy & Happy \\
+  \hline
+  Sad & Sad \\
+  \hline
+  Angry & Angry \\
+  \hline
+  Fearful & Fearful \\
+  \hline
+  Disgust & Disgust \\
+  \hline
+  Surprised & \textbf{Happy} \\
+  \hline
+\end{tabularx}
+\end{center}
+Figure 3 - the final emotional labels used to train the model; in bold text are the conversions.
+\\
+\subsection{Data Processing}
+Since the dataset comes in the form of labelled audio (.wav) files, the main task is to convert these to spectrograms, in particular mel spectrograms, that can later be used to train the model. Using the mel scale as opposed to the hertz scale is important when working with human audio; the mel scale is a scale derived from tests with human listeners, such that the scale of pitches is judged to be equal in distance from one another.
+\\
+
+\noindent The first task is converting the audio frequency from the hertz scale to the mel scale, this is given by the equation $m = 2595 \log_{10}\left(1 + \frac{Hz}{700}\right)$. Once this conversion is made, a mel spectrogram can be obtained from an audio signal by computing the squared magnitude of the short-time Fourier Transform (STFT) applied to a signal, substituting the frequency of the signal for the mel scale conversion. Finally, the mel spectrogram is scaled to decibel units according to $10 \times \log_{10}(mel \, spectrogram)$. This in turn corresponds to a weighted matrix, as in figure 4 below.
+\\
+\begin{center}
+\includegraphics{figure_3_spectrogram_matrix}
+\end{center}
+Figure 4 - a log-scaled mel spectrogram obtained from an audio file from the dataset.
+\begin{center}
+\includegraphics{figure_5_log_spectrogram}
+\end{center}
+Figure 5 - illustrating the importance of the decibel conversion.
+\\
+
+\noindent The last step of the data processing stage was creating the testing and training data through applying the labelling and spectrogram transformation functions to each audio file. The testing data was selected through a random sampling ($n = 180$) of assorted audio files containing all emotions in scope and all actors except actor 24. Actor 24 was excluded in an attempt to introduce some completely unknown data into the testing dataset.
+\newpage
+\subsection{Model Architecture \& Training}
+The approach towards building the model involved researching existing models and simply experimenting with different variables. Research documented in the literature review, with particular regard to the paper by Venkataramanan \& Rajomohan (2019), showed that the convolutional neural network approach, applied to visualisations of signals, achieved by far the best results. The core architecture, consisting of 4 2-dimensional convolutional layers with max pooling, batch normalisation, dropout regularisation, and an exponential linear unit (ELU) activation function, therefore remained the same throughout the experiments. The Adam optimiser was selected due to the adaptive learning rate and categorical cross entropy was selected as the loss function (since the goal is to classify across multiple classes).
+\\
+
+\includegraphics[width=10cm,height=14cm]{figure_6_model_visualisation}
+\\
+
+Figure 6 - summary of the complete speech emotion recognition model.
+\\
+
+\noindent Once the final design had been decided, the model was then trained several times using a multitude of different batch and epoch size combinations. The main goal was to strike a balance between optimisation and the over-fitting problem; 125 epochs at batch size 16 produced the most optimal results of the tests performed (including in terms of computational efficiency).
+\\
+
+\noindent The training steps and code can be viewed from the SER Classifier Jupyter Notebook with link in the appendix.
+\subsection{Testing}
+After the final model was trained, the test dataset was loaded and tested blindly on the model, yielding 180 predictions. The categorical accuracy across this dataset was 68.88\%, which is a comparatively high score. Whilst the accuracy is most certainly inflated due to the similarities of the test dataset (all of the speakers being North American actors speaking English and saying similar sentences), the results are still impressive considering both the lack of training data and the fact that the majority of the test data consisted of actors that had not been used to train the model at all. 
+\begin{center}
+\begin{tabularx}{\textwidth}{ |X|X| }
+\hline 
+  \textbf{Actual value} & \textbf{Prediction} \\
+  \hline
+  22. female sad & 22. female neutral \\
+  \hline
+  28. female angry & 28. female neutral \\
+  \hline
+  45. female disgust & 45. male sad \\
+  \hline
+  72. male happy & 72. female happy \\
+  \hline
+  80. male sad & 80. male neutral \\
+  \hline
+  100. male fearful & 100. male happy \\
+  \hline
+  152. female angry & 152. male angry \\
+  \hline
+\end{tabularx}
+\end{center}
+Figure 7 - a sample of the incorrect predictions, showing reasonable mistakes (i.e. emotional similarity or right emotion; wrong gender). \textit{Values taken from SER\_Classifier notebook}.
+\\
+\noindent After the model had been tested on sample data from the same dataset, the next step was to test it on completely unique audio. The main source of this audio was from myself and from family and friends. From personal tests using my own voice, the results yielded were positively surprising. In particular, the model had shown to have learned the negative emotions particularly well; correctly predicting male anger for each of the sample clips (included in the GitHub repository). What was also impressive was that the model wasn't just predicting the correct emotion with a slight edge over the other categories; the model would predict anger with over 90\% accuracy over the other categories (with male disgust, female anger, and male sad often taking up the remainder of the prediction for this category).
+\\
+\includegraphics[width=7cm, height=6cm]{figure_8_personal_prediction}
+\\
+Figure 8 - output predictions using an audio clip of myself talking angrily, available through the appendix.
+\newpage
+\noindent A particularly interesting test was conducted using a friend of mine with autism who notably struggles to perceive the emotions of others. For the test, she was asked to send some audio clips of herself conveying an impression of the various emotions in scope. The overall accuracy initially seemed poor, with some predictions failing to even fit the binary classification of positive/negative. Upon looking further into this and analysing the audio files together, we agreed that actually she herself had misclassified emotions that the predictions from the model were more reflective of. 
+\begin{center}
+\includegraphics[width=16cm, height=9cm]{figure_9_autism}
+\end{center}
+Figure 9 - an example of one of the tests on a friend with autism who had herself misclassified the audio (and a preview of the GUI tool).
+\newpage
+\subsection{GUI Development}
+Once the model had been developed, tested, and evaluated, the final step of this project was to deploy the model into a functional tool for end-users. The primary objective of the tool was that a user with no next to no technical background could easily obtain results from the model without having to write code or tweak files. The core functionality of the tool was relatively easy to determine; the user should be able to analyse pre-recorded audio and should be able to record audio directly so that the audio would be analysed and the results clearly visible. Since accessibility was an important factor, the tool was developed with simplicity and efficiency in mind. To achieve this, the tool was built natively within Python using Tkinter and with minimal libraries / graphics. The tool at first glance is shown in figure 10 and figure 9 shows a working example.
+\begin{center}
+\includegraphics[width=16cm, height=9cm]{figure_10_finished_tool}
+\end{center}
+Figure 10 - The tool upon execution, showing the two key functions as buttons.
+\section{Evaluation}
+The end result of this project is both a promising speech emotion recognition classifier (by account of the tested accuracy) and a fully functional tool that can be used by end users.
+\\
+
+... More to do...
+\newpage
+\section{Discussion}
+The project was originally structured around three key pillars; building a speech emotion recognition classifier, building an accessible tool to utilise the classifier, and testing it within learning environments to document the findings. The idea behind this structure was that, upon completion of any stage, there would at least be something to document and contribute back to the field. Unfortunately, the third stage of the project was not able to take place due largely to the global pandemic, but also due to a personal underestimation of the length of time required to even begin understanding the fields of signal processing and machine learning. However, the amount of personal development and new knowledge I have been able gain through undertaking this project have been of immeasurable value to me.
+\\
+
+\noindent The main strength of the project is the final product itself, which I believe offers a functionality that is, in some cases, insightful enough to be used as is. For example, the tests performed with my friend with autism directly show that the tool can offer useful insights previously unobtainable. Furthermore, the model architecture and trained model both provide a useful checkpoint that could easily be enhanced further through additional data volume. If nothing else, I believe that the model and final application developed alongside this project provide a clear and well documented framework to anyone looking to enter speech emotion recognition or gain a head start in developing their own approach. 
+\\
+
+\noindent Was I to embark on this project from the beginning again, I would certainly choose less ambitious targets and goals. The core development of the project took far more time than originally anticipated, which I should have taken into consideration when planning the project. I would also change my approach to form a better foundation before starting on the practical work, because through doing this, a lot of debugging time could have been saved and concentrated elsewhere, resulting in a better overall project. 
+\\
+
+\noindent Despite the lack of new research linked to the usage of the tool in learning environments, the tool itself has been successfully developed and documented, and could easily be picked up from where it has been left off to continue further work with the project. Combining this with the vast amount I have learned makes this project a huge personal success. 
 \newpage
 
 \section{Project Management}
@@ -175,6 +298,8 @@ Figure 2 - only the sections marked in green (emotion and gender) need to be con
 \item Harrell, S., Bynum, Y. (2018). Factors affecting technology integration in the classroom. \textit{Alabama Journal of Educational Leadership}, 5, 12-18
 
 \item Munshi, A., Rajendran, R., Ocumpaugh, J., Biswas, G., Baker, R. S., Paquette, L. (2018). Modeling learners' cognitive and affective states to scaffold SRL in open-ended learning environments. In \textit{Proceedings of the 26th conference on user modeling, adaptation and personalization} (pp. 131-138). \tab \href{https://doi.org/10.1145/3209219.3209241}{https://doi.org/10.1145/3209219.3209241}
+
+\item Kaggle. (2019). \textit{RAVDESS Emotional speech audio - Emotional speech audio}\\\href{https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio}{https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio}
 \end{itemize}
 
 \newpage
