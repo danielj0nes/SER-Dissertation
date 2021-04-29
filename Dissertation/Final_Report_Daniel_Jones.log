@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.27)  28 APR 2021 00:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.27)  29 APR 2021 12:41
 entering extended mode
 **./Final_Report_Daniel_Jones.tex
 (Final_Report_Daniel_Jones.tex
@@ -299,25 +299,25 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (Final_Report_Daniel_Jones.aux)
 \openout1 = `Final_Report_Daniel_Jones.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-Package hyperref Info: Link coloring OFF on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+Package hyperref Info: Link coloring OFF on input line 20.
 
 (C:\Users\daniel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -331,9 +331,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count273
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
  (Final_Report_Daniel_Jones.out) (Final_Report_Daniel_Jones.out)
 \@outlinefile=\write3
 \openout3 = `Final_Report_Daniel_Jones.out'.
@@ -410,11 +410,11 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 pdfTeX warning: pdflatex (file ./SER_Daniel_Jones_Declaration.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<SER_Daniel_Jones_Declaration.pdf, id=15, 598.235pt x 845.1575pt>
+<SER_Daniel_Jones_Declaration.pdf, id=59, 598.235pt x 845.1575pt>
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf>
-Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf  used on input line 1
-7.
+Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf  used on input line 2
+1.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 
 
@@ -422,8 +422,8 @@ pdfTeX warning: pdflatex (file ./SER_Daniel_Jones_Declaration.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf>
-Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf  used on input line 1
-7.
+Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf  used on input line 2
+1.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 
 
@@ -433,31 +433,31 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./SER_Daniel_Jones_Declaration.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<SER_Daniel_Jones_Declaration.pdf, id=18, page=1, 598.235pt x 845.1575pt>
+<SER_Daniel_Jones_Declaration.pdf, id=62, page=1, 598.235pt x 845.1575pt>
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf, page 1>
 Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf , page1 used on input
- line 17.
+ line 21.
 (pdftex.def)             Requested size: 598.23354pt x 845.15544pt.
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf, page 1>
 Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf , page1 used on input
- line 17.
+ line 21.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf, page 1>
 Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf , page1 used on input
- line 17.
+ line 21.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf, page 1>
 Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf , page1 used on input
- line 17.
+ line 21.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf, page 1>
 Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf , page1 used on input
- line 17.
+ line 21.
 (pdftex.def)             Requested size: 597.7406pt x 844.45905pt.
 [1
 
@@ -471,7 +471,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2{C:/Users/daniel/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(Final_Report_Daniel_Jones.toc)
+(Final_Report_Daniel_Jones.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+)
 \tf@toc=\write4
 \openout4 = `Final_Report_Daniel_Jones.toc'.
 
@@ -485,17 +492,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--52
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
@@ -508,43 +515,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
 
  []
 
+<./images//figure_1_spectrogram_comparison.png, id=108, 551.05875pt x 310.15875
+pt>
+File: ./images//figure_1_spectrogram_comparison.png Graphic file (type png)
+<use ./images//figure_1_spectrogram_comparison.png>
+Package pdftex.def Info: ./images//figure_1_spectrogram_comparison.png  used on
+ input line 75.
+(pdftex.def)             Requested size: 398.33858pt x 224.20859pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--70
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[5]
-<./images//Daniel_Jones_Gantt_Chart.jpg, id=48, 3177.8725pt x 1877.0125pt>
-File: ./images//Daniel_Jones_Gantt_Chart.jpg Graphic file (type jpg)
-<use ./images//Daniel_Jones_Gantt_Chart.jpg>
-Package pdftex.def Info: ./images//Daniel_Jones_Gantt_Chart.jpg  used on input 
-line 77.
-(pdftex.def)             Requested size: 512.15526pt x 341.42778pt.
-
-Overfull \hbox (59.18736pt too wide) in paragraph at lines 73--84
-[] 
  []
 
 
@@ -555,14 +549,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6 <./images//Daniel_Jones_Gantt_Chart.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+[5 <./images//figure_1_spectrogram_comparison.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 84--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--94
+Underfull \hbox (badness 10000) in paragraph at lines 87--89
 
+ []
+
+
+Overfull \hbox (20.2716pt too wide) in paragraph at lines 94--94
+[][]\OT1/cmr/bx/n/14.4 Automatic Speech Emo-tion Recog-ni-tion Us-ing Ma-chine 
+Learn-
  []
 
 
@@ -581,7 +581,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--103
  []
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 104--106
+
+ []
+
+
+Overfull \hbox (21.15495pt too wide) in paragraph at lines 109--109
+[][]\OT1/cmr/bx/n/14.4 A CNN-Assisted En-hanced Au-dio Sig-nal Pro-cess-ing for
+ Speech
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--115
 
  []
 
@@ -594,26 +618,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
-Overfull \hbox (7.72514pt too wide) in paragraph at lines 107--111
-[]\OT1/cmr/bx/n/12 A CNN-Assisted En-hanced Au-dio Sig-nal Pro-cess-ing for Spe
-ech Emo-tion Recog-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--111
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 115--119
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -623,12 +627,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 120--122
-
+Overfull \hbox (24.79103pt too wide) in paragraph at lines 132--134
+\OT1/cmr/m/n/12 dataset (ob-tained through Kag-gle at []https://www.kaggle.com/
+uwrfkaggler/ravdess-emotional-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 123--127
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
@@ -641,31 +646,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 135.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 135.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 135.
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+ []
+
+<./images//figure_2_dataset_audio_example.png, id=141, 441.14813pt x 166.37157p
+t>
+File: ./images//figure_2_dataset_audio_example.png Graphic file (type png)
+<use ./images//figure_2_dataset_audio_example.png>
+Package pdftex.def Info: ./images//figure_2_dataset_audio_example.png  used on 
+input line 140.
+(pdftex.def)             Requested size: 441.14705pt x 166.37114pt.
+
+Overfull \hbox (5.80397pt too wide) in paragraph at lines 140--143
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 140--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--140
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
-
- []
-
-
-Overfull \hbox (13.42099pt too wide) in paragraph at lines 144--145
-|   \OT1/cmr/m/it/12 adap-ta-tion and per-son-al-iza-tion \OT1/cmr/m/n/12 (pp. 
-131-138). []https://doi.org/10.1145/3209219.3209241[] 
  []
 
 
@@ -676,26 +680,67 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10] (Final_Report_Daniel_Jones.aux)
+[10 <./images//figure_2_dataset_audio_example.png>]
+<./images//Daniel_Jones_Gantt_Chart.jpg, id=148, 3177.8725pt x 1877.0125pt>
+File: ./images//Daniel_Jones_Gantt_Chart.jpg Graphic file (type jpg)
+<use ./images//Daniel_Jones_Gantt_Chart.jpg>
+Package pdftex.def Info: ./images//Daniel_Jones_Gantt_Chart.jpg  used on input 
+line 154.
+(pdftex.def)             Requested size: 512.15526pt x 341.42778pt.
+
+Overfull \hbox (59.18736pt too wide) in paragraph at lines 150--160
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--160
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11 <./images//Daniel_Jones_Gantt_Chart.jpg>]
+Overfull \hbox (7.88467pt too wide) in paragraph at lines 171--172
+\OT1/cmr/m/it/12 me-dia and ma-chine learn-ing\OT1/cmr/m/n/12 . In-te-chOpen. [
+]https://doi.org/10.5772/intechopen.84856[] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12] (Final_Report_Daniel_Jones.aux)
 Package rerunfilecheck Info: File `Final_Report_Daniel_Jones.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: 1975D4A86FE66C5CDD7E204CDE09676C;309.
+(rerunfilecheck)             Checksum: 4A6E10A38A89D668CD9761B8CE407B99;3108.
  ) 
 Here is how much of TeX's memory you used:
- 9732 strings out of 479321
- 146961 string characters out of 2856106
- 459051 words of memory out of 3000000
- 27047 multiletter control sequences out of 15000+600000
- 409243 words of font info for 46 fonts, out of 8000000 for 9000
+ 9778 strings out of 479321
+ 147982 string characters out of 2856106
+ 459112 words of memory out of 3000000
+ 27078 multiletter control sequences out of 15000+600000
+ 409749 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,17n,77p,1071b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/daniel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmbx12.pfb><C:/Users/daniel/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr12.pfb><C:/Users/daniel/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Report_Daniel_Jones.pdf (10 pages, 1706779 bytes).
+ 71i,17n,77p,1077b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ <C:\Users\daniel\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
+m1200.pk><C:/Users/daniel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmbx12.pfb><C:/Users/daniel/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmr12.pfb><C:/Users/daniel/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/daniel/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Final_Report_Daniel_Jones.pdf (12 pages, 1827226 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 50 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 
