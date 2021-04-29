@@ -1,6 +1,5 @@
 Test/
 Train/
-me_tests/
 test_dataset.npy
 train_dataset.npy
 .ipynb_checkpoints
