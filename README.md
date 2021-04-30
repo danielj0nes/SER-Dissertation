@@ -7,4 +7,4 @@ Contained in this repository is the final trained model and corresponding Jupyte
 
 ## Disclaimer
 
-Please use the final product in accordance with the MIT License provided in the repository. Please also consider the fact that the model can **only** offer a broad prediction and absolutely cannot draw absolute truths about speech emotion. Use the tool to help and to guide; not to decide. Thank you.
+Please use the final product in accordance with the MIT License provided in the repository. Please also consider the fact that the model can **only** offer a broad prediction and absolutely **cannot** draw conclusive truths about speech emotion. Use the tool to help and to guide; not to decide. Thank you.
