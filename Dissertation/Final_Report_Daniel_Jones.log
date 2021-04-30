@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.27)  30 APR 2021 00:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.27)  30 APR 2021 14:01
 entering extended mode
 **./Final_Report_Daniel_Jones.tex
 (Final_Report_Daniel_Jones.tex
@@ -432,7 +432,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 pdfTeX warning: pdflatex (file ./SER_Daniel_Jones_Declaration.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<SER_Daniel_Jones_Declaration.pdf, id=83, 598.235pt x 845.1575pt>
+<SER_Daniel_Jones_Declaration.pdf, id=103, 598.235pt x 845.1575pt>
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf>
 Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf  used on input line 2
@@ -455,7 +455,7 @@ on: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./SER_Daniel_Jones_Declaration.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<SER_Daniel_Jones_Declaration.pdf, id=86, page=1, 598.235pt x 845.1575pt>
+<SER_Daniel_Jones_Declaration.pdf, id=106, page=1, 598.235pt x 845.1575pt>
 File: SER_Daniel_Jones_Declaration.pdf Graphic file (type pdf)
 <use SER_Daniel_Jones_Declaration.pdf, page 1>
 Package pdftex.def Info: SER_Daniel_Jones_Declaration.pdf , page1 used on input
@@ -551,7 +551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--74
 
  []
 
-<./images//figure_1_spectrogram_comparison.png, id=138, 551.05875pt x 310.15875
+<./images//figure_1_spectrogram_comparison.png, id=163, 551.05875pt x 310.15875
 pt>
 File: ./images//figure_1_spectrogram_comparison.png Graphic file (type png)
 <use ./images//figure_1_spectrogram_comparison.png>
@@ -640,6 +640,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [7]
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -649,7 +653,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 135--137
+Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
@@ -662,44 +666,34 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-<./images//figure_2_dataset_audio_example.png, id=169, 441.14813pt x 166.37157p
+<./images//figure_2_dataset_audio_example.png, id=194, 441.14813pt x 166.37157p
 t>
 File: ./images//figure_2_dataset_audio_example.png Graphic file (type png)
 <use ./images//figure_2_dataset_audio_example.png>
 Package pdftex.def Info: ./images//figure_2_dataset_audio_example.png  used on 
-input line 143.
+input line 148.
 (pdftex.def)             Requested size: 441.14705pt x 166.37114pt.
 
-Overfull \hbox (5.80397pt too wide) in paragraph at lines 143--146
+Overfull \hbox (5.80397pt too wide) in paragraph at lines 148--151
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--146
+Underfull \hbox (badness 10000) in paragraph at lines 148--151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 148--150
+Underfull \hbox (badness 10000) in paragraph at lines 153--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 156--158
 
  []
 
@@ -712,29 +706,47 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [10 <./images//figure_2_dataset_audio_example.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 182--184
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
-<./images//figure_3_spectrogram_matrix.png, id=176, 152.82094pt x 155.07938pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--186
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
+
+ []
+
+<./images//figure_3_spectrogram_matrix.png, id=201, 152.82094pt x 155.07938pt>
 File: ./images//figure_3_spectrogram_matrix.png Graphic file (type png)
 <use ./images//figure_3_spectrogram_matrix.png>
 Package pdftex.def Info: ./images//figure_3_spectrogram_matrix.png  used on inp
-ut line 185.
+ut line 190.
 (pdftex.def)             Requested size: 152.82054pt x 155.07898pt.
-<./images//figure_5_log_spectrogram.png, id=178, 510.40688pt x 152.06813pt>
+<./images//figure_5_log_spectrogram.png, id=203, 510.40688pt x 152.06813pt>
 File: ./images//figure_5_log_spectrogram.png Graphic file (type png)
 <use ./images//figure_5_log_spectrogram.png>
 Package pdftex.def Info: ./images//figure_5_log_spectrogram.png  used on input 
-line 189.
+line 194.
 (pdftex.def)             Requested size: 510.40562pt x 152.06775pt.
 
-Overfull \hbox (57.43773pt too wide) in paragraph at lines 189--190
+Overfull \hbox (57.43773pt too wide) in paragraph at lines 194--195
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--193
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11 <./images//figure_3_spectrogram_matrix.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 196--198
 
  []
 
@@ -746,31 +758,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[11 <./images//figure_3_spectrogram_matrix.png> <./images//figure_5_log_spectro
-gram.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 197--199
+[12 <./images//figure_5_log_spectrogram.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 202--204
 
  []
 
-<./images//figure_6_model_visualisation.png, id=190, 406.51875pt x 587.19376pt>
+<./images//figure_6_model_visualisation.png, id=219, 406.51875pt x 587.19376pt>
 
 File: ./images//figure_6_model_visualisation.png Graphic file (type png)
 <use ./images//figure_6_model_visualisation.png>
 Package pdftex.def Info: ./images//figure_6_model_visualisation.png  used on in
-put line 200.
+put line 205.
 (pdftex.def)             Requested size: 284.53636pt x 398.33673pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 206--208
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
@@ -782,32 +793,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12 <./images//figure_6_model_visualisation.png>]
-<./images//figure_8_personal_prediction.png, id=196, 292.09125pt x 326.72063pt>
+[13 <./images//figure_6_model_visualisation.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 238--240
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[14]
+<./images//figure_8_personal_prediction.png, id=231, 292.09125pt x 326.72063pt>
 
 File: ./images//figure_8_personal_prediction.png Graphic file (type png)
 <use ./images//figure_8_personal_prediction.png>
 Package pdftex.def Info: ./images//figure_8_personal_prediction.png  used on in
-put line 237.
+put line 243.
 (pdftex.def)             Requested size: 199.17653pt x 170.71329pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 243--247
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
+ []
 
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[13 <./images//figure_8_personal_prediction.png>]
-<./images//figure_9_autism.png, id=204, 714.67pt x 321.2pt>
+<./images//figure_9_autism.png, id=232, 714.67pt x 321.2pt>
 File: ./images//figure_9_autism.png Graphic file (type png)
 <use ./images//figure_9_autism.png>
-Package pdftex.def Info: ./images//figure_9_autism.png  used on input line 243.
+Package pdftex.def Info: ./images//figure_9_autism.png  used on input line 250.
 
 (pdftex.def)             Requested size: 455.24986pt x 256.08305pt.
 
-Overfull \hbox (2.28197pt too wide) in paragraph at lines 243--244
+Overfull \hbox (2.28197pt too wide) in paragraph at lines 250--251
  [] 
  []
 
@@ -819,20 +838,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14 <./images//figure_9_autism.png>]
-<./images//figure_10_finished_tool.png, id=210, 599.99156pt x 358.33875pt>
+[15 <./images//figure_8_personal_prediction.png> <./images//figure_9_autism.png
+>]
+<./images//figure_10_finished_tool.png, id=239, 599.99156pt x 358.33875pt>
 File: ./images//figure_10_finished_tool.png Graphic file (type png)
 <use ./images//figure_10_finished_tool.png>
 Package pdftex.def Info: ./images//figure_10_finished_tool.png  used on input l
-ine 250.
+ine 257.
 (pdftex.def)             Requested size: 455.25676pt x 256.08997pt.
 
-Overfull \hbox (2.28886pt too wide) in paragraph at lines 250--251
+Overfull \hbox (2.28886pt too wide) in paragraph at lines 257--258
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+Underfull \hbox (badness 10000) in paragraph at lines 261--263
 
  []
 
@@ -844,18 +864,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15 <./images//figure_10_finished_tool.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
+[16 <./images//figure_10_finished_tool.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--265
+Underfull \hbox (badness 10000) in paragraph at lines 270--272
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--268
+Underfull \hbox (badness 10000) in paragraph at lines 273--275
 
  []
 
@@ -867,21 +887,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16]
-<./images//Daniel_Jones_Gantt_Chart.jpg, id=220, 3177.8725pt x 1877.0125pt>
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 280--282
+
+ []
+
+<./images//figure_11_notes.png, id=249, 441.90094pt x 380.92313pt>
+File: ./images//figure_11_notes.png Graphic file (type png)
+<use ./images//figure_11_notes.png>
+Package pdftex.def Info: ./images//figure_11_notes.png  used on input line 285.
+
+(pdftex.def)             Requested size: 426.80934pt x 341.44427pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18 <./images//figure_11_notes.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
+
+ []
+
+<./images//Daniel_Jones_Gantt_Chart.jpg, id=255, 3177.8725pt x 1877.0125pt>
 File: ./images//Daniel_Jones_Gantt_Chart.jpg Graphic file (type jpg)
 <use ./images//Daniel_Jones_Gantt_Chart.jpg>
 Package pdftex.def Info: ./images//Daniel_Jones_Gantt_Chart.jpg  used on input 
-line 277.
+line 293.
 (pdftex.def)             Requested size: 512.15526pt x 341.42778pt.
 
-Overfull \hbox (59.18736pt too wide) in paragraph at lines 273--283
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 273--283
-
+Overfull \hbox (76.81218pt too wide) in paragraph at lines 293--299
+[][]
  []
 
 
@@ -892,8 +930,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[17 <./images//Daniel_Jones_Gantt_Chart.jpg>]
-Overfull \hbox (7.88467pt too wide) in paragraph at lines 294--295
+[19 <./images//Daniel_Jones_Gantt_Chart.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[20]
+Overfull \hbox (7.88467pt too wide) in paragraph at lines 316--317
 \OT1/cmr/m/it/12 me-dia and ma-chine learn-ing\OT1/cmr/m/n/12 . In-te-chOpen. [
 ]https://doi.org/10.5772/intechopen.84856[] 
  []
@@ -906,16 +953,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18] (Final_Report_Daniel_Jones.aux)
+[21]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22] (Final_Report_Daniel_Jones.aux)
 Package rerunfilecheck Info: File `Final_Report_Daniel_Jones.out' has not chang
 ed.
-(rerunfilecheck)             Checksum: B366448121AD85C12E4B9120A7784A9C;3876.
+(rerunfilecheck)             Checksum: 15355BCE2C712B12B0111B3DF2ED026A;4734.
  ) 
 Here is how much of TeX's memory you used:
- 9941 strings out of 479321
- 151129 string characters out of 2856106
- 461097 words of memory out of 3000000
- 27224 multiletter control sequences out of 15000+600000
+ 9962 strings out of 479321
+ 151493 string characters out of 2856106
+ 462101 words of memory out of 3000000
+ 27236 multiletter control sequences out of 15000+600000
  409749 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,17n,77p,1043b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -931,9 +987,9 @@ el/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Users/daniel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb><C:/Users/daniel/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmtt12.pfb>
-Output written on Final_Report_Daniel_Jones.pdf (18 pages, 2019756 bytes).
+Output written on Final_Report_Daniel_Jones.pdf (22 pages, 2050601 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

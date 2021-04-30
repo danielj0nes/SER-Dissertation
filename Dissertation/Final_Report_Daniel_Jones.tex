@@ -72,7 +72,7 @@ It can be observed that technology has yet to make a significant contribution to
 \noindent In this project, speech emotion has been identified and selected as a suitable metric for analysis. Speech emotion is a language agnostic metric that transcends many of the barriers posed by the more obvious metrics such as spoken / body language or facial expressions.
 \\
 
-\noindent Despite the many nuances of speech, such as tonality or pitch, there are clear patterns that can be derived from studying how emotions are conveyed. A spectrogram is a visual representation of the spectrum of frequencies (in this case, the frequencies are converted to the mel scale) across a signal as a function of time. Consider the following mel spectrograms produced from two different male actors saying a short sentence in a blatantly angry and then sad manner.
+\noindent Despite the many nuances of speech, such as tonality or pitch, there are clear patterns that can be derived from studying how emotions are conveyed (Angrick et al. 2019). A spectrogram is a visual representation of the spectrum of frequencies (in this case, the frequencies are converted to the mel scale) across a signal as a function of time. Consider the following mel spectrograms produced from two different male actors saying a short sentence in a blatantly angry and then sad manner.
 \\
 \\
 \includegraphics[width=14cm]{figure_1_spectrogram_comparison}
@@ -126,17 +126,22 @@ This paper provides solid reasoning on the critical factors affecting the integr
 
 \subsection{\href{https://www.researchgate.net/profile/Ryan-Baker-2/publication/326217846_Modeling_Learners'_Cognitive_and_Affective_States_to_Scaffold_SRL_in_Open-Ended_Learning_Environments/links/5b560a4245851507a7c3f516/Modeling-Learners-Cognitive-and-Affective-States-to-Scaffold-SRL-in-Open-Ended-Learning-Environments.pdf}{Modeling learners' cognitive and affective states to scaffold SRL in open-ended learning environments}}
 Whilst this paper largely covers an area unrelated to the project, the points regarding relationships between cognitive and affective states are interesting and will be of use to the analysis stage of the project. The paper goes on to describe an interesting correlation between two affective states, boredom and delight, and academic performance. As one might expect, an exposed state of boredom significantly decreases cognitive and subsequently academic performance, as documented by the paper. With these statistics in mind, prioritising the prediction of the states of boredom and delight from speech will be areas of particular interest to focus training the model on.
+\section{Methodology}
+Selecting the correct tools to tackle this project was challenging due to the many pros and cons of the existing frameworks available. Python was the obvious language of choice due to the massive amount of well documented machine learning libraries available. Had the dataset been larger however, Python and Python libraries would have been switched out for a lower level approach, using C++ for example, for efficiency. Initially PyTorch was selected as the deep learning framework of choice due to the pythonic syntax and therefore ease of use. Whilst an implementation could be made using PyTorch, the end model was fundamentally flawed. The documentation of PyTorch, especially for a beginner, is not the most clear; many parameters are not sufficiently explained and a lot of prior knowledge is assumed of the reader.
+\\
 
-\section{Method}
+\noindent Eventually PyTorch was switched for Keras and TensorFlow, with much more success. Whilst TensorFlow is not quite as elegant or lightweight as PyTorch, the documentation of the library is unmatched. Consequently, multiple successful deep learning models could then be built and deployed without much debugging required. Besides the machine learning libraries, the popular signal processing library Librosa was used to handle the processing and transformation of audio files. Librosa is well documented and can handle complicated audio transformations in only a few lines of code.
+
+\section{Implementation}
 The development of this project can be broken down into 5 key stages: dataset selection and comprehension, data processing, model architecture and training, testing, and finally, GUI development.
 \subsection{Foreword}
-A lot of the time spent on this project was spent prior to the key stages on personal development; this involved developing a theoretical and practical understanding of machine learning techniques. In particular, the LinkedIn Learning courses ``PyTorch Essential Training: Deep Learning'' by Jonathan Fernandes and ``Building and Deploying Deep Learning Applications with TensorFlow'' by Adam Geitgey both played a large role in understanding how the technology worked at both the practical and theoretical levels. Once a core understanding was developed, consistent literature review of technical papers on speech emotion recognition helped to further shape the understanding towards the specific subject matter. The entire project was built using Python with various Python libraries; in particular TensorFlow, Keras, and Librosa. TensorFlow and Keras were used for the machine learning aspects of the project and Librosa in audio processing.
+A lot of the time spent on this project was spent prior to the key stages on personal development; this involved developing a theoretical and practical understanding of machine learning techniques. In particular, two LinkedIn Learning courses by Fernandes (2019) and Geitgey (2017) both played a large role in understanding how the technology worked at both the practical and theoretical levels. Once a core understanding was developed, consistent literature review of technical papers on speech emotion recognition helped to further shape the understanding towards the specific subject matter. 
 \subsection{Dataset Selection and Comprehension}
 Prior to embarking on any practical work for this project, consideration was made to the type of data that would be required to use for both testing and training the speech emotion classifier. One initial idea was to collect and sample our own data, but the ongoing global pandemic made this option infeasible. In general, the choices for such a dataset were highly limited, with only one option standing out in particular; The Ryerson Audio-Visual Database of Emotional Speech and Song (RAVDESS). RAVDESS is an open-source dataset (Kaggle, 2019) consisting of 1440 unique audio clips of actors speaking a sentence whilst blatantly conveying one emotion out of: calm, happy, sad, angry, fearful, surprise, and disgust.
 \\
 
 \noindent The selection of the RAVDESS dataset for this project meant that the emotions in scope were pre-determined, which, whilst not inherently detrimental, meant that prior work related to selecting the emotions best suited to the field of learning environments became redundant. Fortunately however, the more general emotions that had been selected prior were covered by the dataset with later developments showing that inferences about the more complicated in-scope emotions could be attained from the broad parent classes, as well as through studying the multi-class weighted predictions.
-\newpage
+
 \noindent The dataset is already labelled such that the labels effectively describe the key content of the audio clip, as shown below in figure 2.
 \\
 
@@ -179,7 +184,7 @@ Figure 3 - the final emotional labels used to train the model; in bold text are 
 Since the dataset comes in the form of labelled audio (.wav) files, the main task is to convert these to spectrograms, in particular mel spectrograms, that can later be used to train the model. Using the mel scale as opposed to the hertz scale is important when working with human audio; the mel scale is a scale derived from tests with human listeners, such that the scale of pitches is judged to be equal in distance from one another.
 \\
 
-\noindent The first task is converting the audio frequency from the hertz scale to the mel scale, this is given by the equation $m = 2595 \log_{10}\left(1 + \frac{Hz}{700}\right)$. Once this conversion is made, a mel spectrogram can be obtained from an audio signal by computing the squared magnitude of the short-time Fourier Transform (STFT) applied to a signal, substituting the frequency of the signal for the mel scale conversion. Finally, the mel spectrogram is scaled to decibel units according to $10 \times \log_{10}(mel \, spectrogram)$. This in turn corresponds to a weighted matrix, as in figure 4 below.
+\noindent The first task is converting the audio frequency from the hertz scale to the mel scale, this is given by the equation $m = 2595 \log_{10}\left(1 + \frac{Hz}{700}\right)$. Once this conversion is made, a mel spectrogram can be obtained from an audio signal by computing the squared magnitude of the Short-Time Fourier Transform (STFT) applied to a signal, substituting the frequency of the signal for the mel scale conversion. Finally, the mel spectrogram is scaled to decibel units according to $10 \times \log_{10}(mel \, spectrogram)$. This in turn corresponds to a weighted matrix, as in figure 4 below.
 \\
 \begin{center}
 \includegraphics{figure_3_spectrogram_matrix}
@@ -232,20 +237,22 @@ After the final model was trained, the test dataset was loaded and tested blindl
 \end{center}
 Figure 7 - a sample of the incorrect predictions, showing reasonable mistakes (i.e. emotional similarity or right emotion; wrong gender). \textit{Values taken from SER\_Classifier notebook}.
 \\
+
 \noindent After the model had been tested on sample data from the same dataset, the next step was to test it on completely unique audio. The main source of this audio was from myself and from family and friends. From personal tests using my own voice, the results yielded were positively surprising. In particular, the model had shown to have learned the negative emotions particularly well; correctly predicting male anger for each of the sample clips (included in the GitHub repository). What was also impressive was that the model wasn't just predicting the correct emotion with a slight edge over the other categories; the model would predict anger with over 90\% accuracy over the other categories (with male disgust, female anger, and male sad often taking up the remainder of the prediction for this category).
-\\
+\newpage
 \includegraphics[width=7cm, height=6cm]{figure_8_personal_prediction}
 \\
 Figure 8 - output predictions using an audio clip of myself talking angrily, available through the appendix.
-\newpage
-\noindent A particularly interesting test was conducted using a friend of mine with autism who notably struggles to perceive the emotions of others. For the test, she was asked to send some audio clips of herself conveying an impression of the various emotions in scope. The overall accuracy initially seemed poor, with some predictions failing to even fit the binary classification of positive/negative. Upon looking further into this and analysing the audio files together, we agreed that actually she herself had misclassified emotions that the predictions from the model were more reflective of. 
+\\
+
+\noindent A particularly interesting test was conducted using a friend of mine with diagnosed Asperger's syndrome who notably struggles to perceive the emotions of others. For the test, she was asked to send some audio clips of herself conveying an impression of the various emotions in scope. The overall accuracy initially seemed poor, with some predictions failing to even fit the binary classification of positive/negative. Upon looking further into this and analysing the audio files together, we agreed that actually she herself had misclassified emotions that the predictions from the model were more reflective of. 
 \begin{center}
 \includegraphics[width=16cm, height=9cm]{figure_9_autism}
 \end{center}
 Figure 9 - an example of one of the tests on a friend with autism who had herself misclassified the audio (and a preview of the GUI tool).
 \newpage
 \subsection{GUI Development}
-Once the model had been developed, tested, and evaluated, the final step of this project was to deploy the model into a functional tool for end-users. The primary objective of the tool was that a user with no next to no technical background could easily obtain results from the model without having to write code or tweak files. The core functionality of the tool was relatively easy to determine; the user should be able to analyse pre-recorded audio and should be able to record audio directly so that the audio would be analysed and the results clearly visible. Since accessibility was an important factor, the tool was developed with simplicity and efficiency in mind. To achieve this, the tool was built natively within Python using Tkinter and with minimal libraries / graphics. The tool at first glance is shown in figure 10 and figure 9 shows a working example.
+Once the model had been developed, tested, and evaluated, the final step of this project was to deploy the model into a functional tool for end-users. The primary objective of the tool was that a user with next to no technical background could easily obtain results from the model without having to write code or tweak files. The core functionality of the tool was relatively easy to determine; the user should be able to analyse pre-recorded audio and should be able to record audio directly so that the audio would be analysed and the results clearly visible. Since accessibility was an important factor, the tool was developed with simplicity and efficiency in mind. To achieve this, the tool was built natively within Python using Tkinter and with minimal libraries / graphics. The tool at first glance is shown in figure 10 and figure 9 shows a working example.
 \begin{center}
 \includegraphics[width=16cm, height=9cm]{figure_10_finished_tool}
 \end{center}
@@ -257,7 +264,7 @@ The end result of this project is both a promising speech emotion recognition cl
 ... More to do...
 \newpage
 \section{Discussion}
-The project was originally structured around three key pillars; building a speech emotion recognition classifier, building an accessible tool to utilise the classifier, and testing it within learning environments to document the findings. The idea behind this structure was that, upon completion of any stage, there would at least be something to document and contribute back to the field. Unfortunately, the third stage of the project was not able to take place due largely to the global pandemic, but also due to a personal underestimation of the length of time required to even begin understanding the fields of signal processing and machine learning. However, the amount of personal development and new knowledge I have been able gain through undertaking this project have been of immeasurable value to me.
+The project was originally structured around three key pillars; building a speech emotion recognition classifier, building an accessible tool to utilise the classifier, and testing it within learning environments to document the findings. The idea behind this structure was that, upon completion of any stage, there would at least be something to document and contribute back to the field. Unfortunately, the third stage of the project was not able to take place due largely to the global pandemic, but also due to a personal underestimation of the length of time required to even begin understanding the fields of signal processing and machine learning. However, the amount of personal development and new knowledge I have been able to gain through undertaking this project have been of immeasurable value to me.
 \\
 
 \noindent The main strength of the project is the final product itself, which I believe offers a functionality that is, in some cases, insightful enough to be used as is. For example, the tests performed with my friend with autism directly show that the tool can offer useful insights previously unobtainable. Furthermore, the model architecture and trained model both provide a useful checkpoint that could easily be enhanced further through additional data volume. If nothing else, I believe that the model and final application developed alongside this project provide a clear and well documented framework to anyone looking to enter speech emotion recognition or gain a head start in developing their own approach. 
@@ -270,22 +277,37 @@ The project was originally structured around three key pillars; building a speec
 \newpage
 
 \section{Project Management}
-\noindent \textbf{Gantt Chart}
+A waterfall-like project management methodology, namely IPERKA, was selected due to the structure of the project (as discussed in the \textbf{Discussion} section) and because of prior work experience using the methodology. IPERKA stands for ``Informieren, Planen, Entscheiden, Realisieren, Kontrollieren, and Auswerten'' which translates to ``informing, planning, deciding, implementing, controlling, and evaluating''. The methodology places lots of importance on project planning via the first three stages, which I felt was beneficial here due to the lack of experience prior to commencing this project.
 \\
-\noindent In order to illustrate the schedule of the project, I have produced a Gantt chart, shown below.
+
+\noindent Regular weekly meetings with my supervisor were organised and held over Microsoft Teams each week to discuss both ideas, problems, and progress. I found these meetings extremely useful as they motivated me to stay on track, organise my thoughts, and discuss the feasibility of ideas. I dedicated approximately 2 days each week (requiring more particularly towards the end of the project) towards working on the project. An example of the notes taken during these sessions is shown below.
+\begin{center}
+\includegraphics[width=15cm, height=12cm]{figure_11_notes}
+\end{center}
+Figure 11 - an example of notes taken from the very first meeting with my supervisor, discussing initial requirements and ideas.
+\newpage
+\subsection{Gantt Chart}
+To help stick to a schedule and plan, I worked predominantly according to a Gantt chart, drafted in the early stages of the project. Whilst I wasn't able to exactly follow the Gantt chart, the structure and clarity provided by it proved to be worthwhile throughout the project, highlighting a clear path towards the final goals.
 \\
+
 \includegraphics[width=18cm, height=12cm]{Daniel_Jones_Gantt_Chart}
+Figure 12 - A screen-shot taken from the Gantt chart showing meeting plans and tasks to be completed.
 \\
 \noindent \href{https://i.imgur.com/9tchO4N.jpg}{\color{blue}\textbf{Link to full size image}}
 \\
 \noindent \href{https://app.instagantt.com/shared/s/PdaKZZeApqszVu1eftjC/latest}{\color{blue}\textbf{Link to latest edition of the chart}}
-\\
+\subsection{Presentation}
+Several progress presentations took place throughout the project life-cycle, particularly when milestone accomplishments (such as finishing the model and the GUI) had been accomplished. In the first presentation, a now redundant feature was demonstrated with positive feedback and with nothing to add or change. In the second presentation, the primary model architecture was demonstrated, receiving positive feedback. In the second presentation, the main comment was on the emphasis of deploying the model into a GUI tool with some discussion about the core functionality of the tool. In the final presentation, the GUI tool and the core functionality of the tool was presented through demonstrating the recognition capabilities using my own voice along with some pre-recorded clips. The feedback was completely positive with nothing to add or change.
+\subsection{Consideration of social, legal, professional, and ethical issues}
+Test
 \newpage
 
 \section{References}
 
 \begin{itemize}
 \item Cho, V., Mansfield, K. C., Claughton, J. (2020). The past and future technology in classroom management and school discipline: A systematic review. \textit{Teaching and Teacher Education, 90}, 103037. \href{https://doi.org/10.1016/j.tate.2020.103037}{https://doi.org/10.1016/j.tate.2020.103037}
+
+\item Angrick, M., Herff, C., Johnson, G., Shih, J., Krusienski, D., Schultz, T. (2019). Interpretation of convolutional neural networks for speech spectrogram regression from intracranial recordings. \textit{Neurocomputing}, 342, 145-151.
 
 \item Sainath, T. N., Mohamed, A. R., Kingsbury, B., Ramabhadran, B. (2013). Deep convolutional neural networks for LVCSR. In \textit{2013 IEEE international conference on acoustics, speech and signal processing} (pp. 8614-8618). \tab \href{https://ieeexplore.ieee.org/abstract/document/6639347}{https://ieeexplore.ieee.org/abstract/document/6639347}
 
@@ -297,11 +319,21 @@ The project was originally structured around three key pillars; building a speec
 
 \item Harrell, S., Bynum, Y. (2018). Factors affecting technology integration in the classroom. \textit{Alabama Journal of Educational Leadership}, 5, 12-18
 
-\item Munshi, A., Rajendran, R., Ocumpaugh, J., Biswas, G., Baker, R. S., Paquette, L. (2018). Modeling learners' cognitive and affective states to scaffold SRL in open-ended learning environments. In \textit{Proceedings of the 26th conference on user modeling, adaptation and personalization} (pp. 131-138). \tab \href{https://doi.org/10.1145/3209219.3209241}{https://doi.org/10.1145/3209219.3209241}
+\item Lim, W., Jang, D., Lee, T. (2016). Speech emotion recognition using convolutional and recurrent neural networks. In \textit{2016 Asia-Pacific signal and information processing association annual summit and conference (APSIPA)} (pp. 1-4). IEEE. \href{http://www.apsipa.org/proceedings_2016/HTML/paper2016/137.pdf}{paper2016.pdf}
+
+\item Munshi, A., Rajendran, R., Ocumpaugh, J., Biswas, G., Baker, R. S., Paquette, L. (2018). Modeling learners' cognitive and affective states to scaffold SRL in open-ended learning environments. In \textit{Proceedings of the 26th conference on user modeling, adaptation and personalization}(pp. 131-138). \tab \href{https://doi.org/10.1145/3209219.3209241}{https://doi.org/10.1145/3209219.3209241}
+
+\item Fernandes, J. (2019, October). \textit{PyTorch Essential Training: Deep Learning} [Video]. LinkedIn. \\ \href{https://www.linkedin.com/learning/pytorch-essential-training-deep-learning/welcome?u=2039756}{https://www.linkedin.com/learning/pytorch-essential-training-deep-learning/}
+
+\item Geitgey, A. (2017, August). \textit{Building and Deploying Deep Learning Applications with TensorFlow} [Video]. LinkedIn. \href{https://www.linkedin.com/learning/building-and-deploying-deep-learning-applications-with-tensorflow/what-is-tensorflow?u=2039756}{https://www.linkedin.com/learning/building-and-deploying-deep-learning-applications-with-tensorflow/what-is-tensorflow}
 
 \item Kaggle. (2019). \textit{RAVDESS Emotional speech audio - Emotional speech audio}\\\href{https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio}{https://www.kaggle.com/uwrfkaggler/ravdess-emotional-speech-audio}
 \end{itemize}
+\section{Appendix}
+\begin{itemize}
 
-\newpage
+\item \href{https://github.com/danielj0nes/SER-Dissertation}{https://github.com/danielj0nes/SER-Dissertation} - GitHub repository containing all of the referenced files, such as the Jupyter Notebook SER\_Classifier.ipynb (where the model was built) and SER\_Application.py where the model was deployed. The repository also contains all of the personal audio files using for testing and documenting results, the source code and images for this document, and will be made available from the 30th of April 2021 18:00 GMT (according to final submission deadline).
+
+\end{itemize}
 
 \end{document}
