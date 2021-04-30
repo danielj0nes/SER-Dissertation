@@ -1,0 +1,27 @@
+\contentsline {section}{\numberline {1}Abstract}{4}{section.1}%
+\contentsline {section}{\numberline {2}Acknowledgements}{4}{section.2}%
+\contentsline {section}{\numberline {3}Introduction}{5}{section.3}%
+\contentsline {section}{\numberline {4}Research Objectives}{6}{section.4}%
+\contentsline {section}{\numberline {5}Literature Review}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}\href {https://www.intechopen.com/books/social-media-and-machine-learning/automatic-speech-emotion-recognition-using-machine-learning}{Automatic Speech Emotion Recognition Using Machine Learning}}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}\href {https://www.mdpi.com/1424-8220/20/1/183/pdf}{A CNN-Assisted Enhanced Audio Signal Processing for Speech Emotion Recognition}}{7}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}\href {https://arxiv.org/pdf/1912.10458.pdf}{Emotion Recognition from Speech}}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}\href {https://files.eric.ed.gov/fulltext/EJ1194723.pdf}{Factors Affecting Technology Integration in the Classroom}}{8}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}\href {https://www.researchgate.net/profile/Ryan-Baker-2/publication/326217846_Modeling_Learners'_Cognitive_and_Affective_States_to_Scaffold_SRL_in_Open-Ended_Learning_Environments/links/5b560a4245851507a7c3f516/Modeling-Learners-Cognitive-and-Affective-States-to-Scaffold-SRL-in-Open-Ended-Learning-Environments.pdf}{Modeling learners' cognitive and affective states to scaffold SRL in open-ended learning environments}}{9}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Methodology}{9}{section.6}%
+\contentsline {section}{\numberline {7}Implementation}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Foreword}{9}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Dataset Selection and Comprehension}{10}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Data Processing}{11}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Model Architecture \& Training}{13}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Testing}{14}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}GUI Development}{16}{subsection.7.6}%
+\contentsline {section}{\numberline {8}Evaluation}{16}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Research Objectives}{17}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Discussion and Conclusion}{18}{section.9}%
+\contentsline {section}{\numberline {10}Project Management}{19}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Gantt Chart}{20}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Presentation}{20}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Consideration of social, legal, professional, and ethical issues}{21}{subsection.10.3}%
+\contentsline {section}{\numberline {11}References}{22}{section.11}%
+\contentsline {section}{\numberline {12}Appendix}{23}{section.12}%
