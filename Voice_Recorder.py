@@ -1,4 +1,3 @@
-# Import the necessary modules.
 import tkinter
 import tkinter as tk
 import tkinter.messagebox
@@ -7,11 +6,8 @@ import wave
 import os
 from datetime import datetime
 
-
 class RecAUD:
-
     def __init__(self, main, chunk=3024, frmat=pyaudio.paInt16, channels=2, rate=44100, py=pyaudio.PyAudio()):
-
         self.last_name = ""
         self.main = main
         self.collections = []
@@ -23,7 +19,7 @@ class RecAUD:
         self.frames = []
         self.st = 1
         self.stream = self.p.open(format=self.FORMAT, channels=self.CHANNELS, rate=self.RATE, input=True, frames_per_buffer=self.CHUNK)
-
+        
     def start_record(self):
         self.st = 1
         self.frames = []
@@ -43,7 +39,7 @@ class RecAUD:
         wf.writeframes(b''.join(self.frames))
         wf.close()
         return os.path.abspath(filename)
-
+    
     def stop(self):
         print("Finished recording")
         self.st = 0
